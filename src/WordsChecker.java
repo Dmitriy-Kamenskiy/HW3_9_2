@@ -8,7 +8,7 @@ public class WordsChecker{
     public WordsChecker(String text) {
         this.text = text;
         wordSet = new HashSet<>();
-        String parts[] = this.text.split("\\P{IsAlphabetic}+");
+        String [] parts = this.text.split("\\P{IsAlphabetic}+");
         for (String part : parts) {
             wordSet.add(part);
         }
